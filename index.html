@@ -1,83 +1,143 @@
-<!DOCTYPE html><html lang="id">
+<!DOCTYPE html>
+<html lang="id">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>X-PLAY</title>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
   <style>
     body {
       margin: 0;
-      font-family: 'Roboto', sans-serif;
-      background: #f9f9f9;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to right, #6dd5fa, #ffffff);
       color: #333;
     }
+
     header {
       background-color: #ffffff;
       display: flex;
-      align-items: center;
       justify-content: space-between;
-      padding: 1rem 2rem;
-      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+      align-items: center;
+      padding: 15px 30px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
     }
+
     header img {
-      height: 50px;
+      height: 40px;
     }
+
     nav a {
       margin-left: 20px;
       text-decoration: none;
       color: #333;
-      font-weight: 500;
+      font-weight: bold;
     }
+
     .hero {
       text-align: center;
-      padding: 3rem 1rem;
-      background: linear-gradient(to right, #1e90ff, #87cefa);
+      padding: 60px 20px;
+      background: linear-gradient(to right, #2193b0, #6dd5ed);
       color: white;
     }
+
     .hero h1 {
-      font-size: 3rem;
-      margin-bottom: 1rem;
+      font-size: 40px;
+      margin-bottom: 10px;
     }
+
     .hero p {
-      font-size: 1.25rem;
+      font-size: 18px;
     }
-    .gallery {
+
+    .produk {
       display: flex;
-      flex-wrap: wrap;
       justify-content: center;
-      padding: 2rem;
+      gap: 40px;
+      padding: 40px 20px;
+      flex-wrap: wrap;
     }
-    .gallery img {
-      max-width: 300px;
-      margin: 10px;
+
+    .produk-item {
+      text-align: center;
+    }
+
+    .produk-item img {
+      width: 120px;
+      height: auto;
       border-radius: 12px;
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     }
+
+    .info {
+      padding: 40px 20px;
+      background-color: #f2fbff;
+      text-align: center;
+      font-size: 16px;
+    }
+
+    .info h2 {
+      font-size: 24px;
+      margin-bottom: 15px;
+      color: #0c5d85;
+    }
+
+    .info a {
+      color: #0077cc;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
     footer {
       text-align: center;
-      padding: 1rem;
-      background: #eee;
-      margin-top: 2rem;
+      padding: 20px;
+      background-color: #f3f3f3;
+      font-size: 14px;
     }
   </style>
 </head>
 <body>
   <header>
-    <img src="xplay_logo_resized.png" alt="X-PLAY Logo">
+    <img src="logo.png" alt="X-PLAY Logo" />
     <nav>
       <a href="#">Home</a>
       <a href="#">Produk</a>
       <a href="#">Kontak</a>
     </nav>
-  </header>  <section class="hero">
+  </header>
+
+  <section class="hero">
     <h1>Selamat Datang di X-PLAY</h1>
     <p>Platform terbaik untuk pecinta game PlayStation. Temukan yang kamu cari di sini!</p>
-  </section>  <section class="gallery">
-    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/PS5_console_%26_dualsense.jpg/800px-PS5_console_%26_dualsense.jpg" alt="PS5 Console">
-    <img src="https://upload.wikimedia.org/wikipedia/commons/3/34/PS4_Pro_console.jpg" alt="PS4 Pro">
-    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6d/PS_VR2_Front.jpg" alt="PS VR">
-  </section>  <footer>
-    &copy; 2025 X-PLAY. All rights reserved.
+  </section>
+
+  <section class="produk">
+    <div class="produk-item">
+      <img src="ps5.png" alt="PS5 Console" />
+      <p>PS5 Console</p>
+    </div>
+    <div class="produk-item">
+      <img src="ps4.png" alt="PS4 Pro" />
+      <p>PS4 Pro</p>
+    </div>
+    <div class="produk-item">
+      <img src="ps3.png" alt="PS3" />
+      <p>PS3</p>
+    </div>
+  </section>
+
+  <section class="info">
+    <h2>Tentang X-PLAY</h2>
+    <p>
+      <strong>X-PLAY</strong> adalah brand rental PS harian terpercaya yang telah melayani sejak 2017.<br />
+      Kami menyediakan layanan antar jemput unit rental PS untuk kenyamanan Anda.<br />
+      Produk tersedia: <strong>PS3, PS4, PS5</strong><br /><br />
+      Hubungi kami: <br />
+      📱 <a href="https://bit.ly/WhatsappXPLAY" target="_blank">WhatsApp: 082125679190</a><br />
+      📸 <a href="https://www.instagram.com/rental.ps.karawang_x_play?igsh=MWJnc256NW44aHl5MA==" target="_blank">Instagram: @rental.ps.karawang_x_play</a>
+    </p>
+  </section>
+
+  <footer>
+    © 2025 X-PLAY. All rights reserved.
   </footer>
 </body>
 </html>

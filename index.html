@@ -1,42 +1,82 @@
-<!DOCTYPE html>
-<html lang="id">
+<!DOCTYPE html><html lang="id">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>X-PLAY</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
   <style>
     body {
-      font-family: Arial, sans-serif;
-      background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
-      color: white;
       margin: 0;
-      padding: 0;
-      text-align: center;
+      font-family: 'Roboto', sans-serif;
+      background: #f9f9f9;
+      color: #333;
     }
     header {
-      padding: 60px 20px;
+      background-color: #ffffff;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 1rem 2rem;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
     }
-    h1 {
-      font-size: 3em;
-      margin-bottom: 10px;
+    header img {
+      height: 50px;
     }
-    p {
-      font-size: 1.2em;
-      color: #ccc;
+    nav a {
+      margin-left: 20px;
+      text-decoration: none;
+      color: #333;
+      font-weight: 500;
+    }
+    .hero {
+      text-align: center;
+      padding: 3rem 1rem;
+      background: linear-gradient(to right, #1e90ff, #87cefa);
+      color: white;
+    }
+    .hero h1 {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+    }
+    .hero p {
+      font-size: 1.25rem;
+    }
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding: 2rem;
+    }
+    .gallery img {
+      max-width: 300px;
+      margin: 10px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     }
     footer {
-      margin-top: 40px;
-      font-size: 0.9em;
-      color: #999;
+      text-align: center;
+      padding: 1rem;
+      background: #eee;
+      margin-top: 2rem;
     }
   </style>
 </head>
 <body>
   <header>
+    <img src="xplay_logo_resized.png" alt="X-PLAY Logo">
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">Produk</a>
+      <a href="#">Kontak</a>
+    </nav>
+  </header>  <section class="hero">
     <h1>Selamat Datang di X-PLAY</h1>
-    <p>Website masih dalam pengembangan. Stay tuned!</p>
-  </header>
-  <footer>
+    <p>Platform terbaik untuk pecinta game PlayStation. Temukan yang kamu cari di sini!</p>
+  </section>  <section class="gallery">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/PS5_console_%26_dualsense.jpg/800px-PS5_console_%26_dualsense.jpg" alt="PS5 Console">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/3/34/PS4_Pro_console.jpg" alt="PS4 Pro">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6d/PS_VR2_Front.jpg" alt="PS VR">
+  </section>  <footer>
     &copy; 2025 X-PLAY. All rights reserved.
   </footer>
 </body>

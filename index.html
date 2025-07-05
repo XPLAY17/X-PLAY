@@ -1,80 +1,97 @@
-<!DOCTYPE html><html lang="id">
+<!DOCTYPE html>
+<html lang="id">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Rental PS Karawang - X-PLAY</title>
   <style>
     body {
       margin: 0;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      font-family: 'Segoe UI', sans-serif;
       color: white;
-      background: url('background.jpg') no-repeat center center fixed;
+      background-image: url('background.jpg'); /* Ganti nama file sesuai background */
       background-size: cover;
-      backdrop-filter: brightness(0.6);
+      background-position: center;
     }
-    .container {
+    .overlay {
+      background-color: rgba(0, 0, 0, 0.7);
+      padding: 40px 20px;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
       text-align: center;
-      padding: 80px 20px;
     }
     h1 {
-      font-size: 3em;
+      font-size: 40px;
       margin-bottom: 10px;
     }
     h2 {
-      font-size: 1.5em;
-      color: #ccc;
+      margin-top: 0;
+      font-size: 24px;
+      font-weight: 400;
+    }
+    .tagline {
+      font-style: italic;
+      margin-top: 10px;
       margin-bottom: 30px;
     }
-    p {
-      font-size: 1.2em;
-      margin-bottom: 20px;
-    }
-    .buttons {
-      margin-top: 30px;
-    }
     .buttons a {
-      display: inline-block;
-      margin: 10px;
-      padding: 12px 25px;
-      border-radius: 30px;
       text-decoration: none;
+      color: white;
+      background: #25d366;
+      padding: 12px 24px;
+      margin: 10px;
+      border-radius: 8px;
+      display: inline-block;
       font-weight: bold;
       transition: background 0.3s;
     }
-    .whatsapp {
-      background: #25D366;
-      color: white;
-    }
-    .whatsapp:hover {
-      background: #1da851;
-    }
-    .instagram {
+    .buttons a.instagram {
       background: #E1306C;
-      color: white;
     }
-    .instagram:hover {
-      background: #b62059;
+    .buttons a:hover {
+      opacity: 0.8;
     }
-    footer {
-      margin-top: 80px;
-      font-size: 0.9em;
-      color: #aaa;
+    .promo {
+      margin: 30px 0;
+      font-size: 18px;
+      background: rgba(255, 255, 255, 0.1);
+      padding: 10px 20px;
+      border-radius: 10px;
+    }
+    .price-list {
+      margin-top: 40px;
+      max-width: 500px;
+      width: 100%;
+    }
+    .price-list img {
+      width: 100%;
+      border-radius: 12px;
+      box-shadow: 0 0 20px rgba(0,0,0,0.6);
     }
   </style>
 </head>
 <body>
-  <div class="container">
+  <div class="overlay">
     <h1>X-PLAY</h1>
-    <h2>Rental PS Harian Area Karawang</h2>
-    <p>Rental Praktis, Tanpa Harus Keluar Rumah</p>
-    <p>Kami melayani rental harian untuk PS3, PS4, PS5, serta TV 32". Siap antar jemput unit ke lokasi Anda!</p>
-    <p>Harga mulai dari <strong>Rp35.000</strong> — makin lama makin murah!</p><div class="buttons">
-  <a href="https://bit.ly/WhatsappXPLAY" target="_blank" class="whatsapp">Chat WhatsApp</a>
-  <a href="https://www.instagram.com/rental.ps.karawang_x_play?igsh=MWJnc256NW44aHI5MA==" target="_blank" class="instagram">Kunjungi Instagram</a>
-</div>
+    <h2>Rental PS Harian Karawang</h2>
+    <p class="tagline">"Rental Praktis, Tanpa Harus Keluar Rumah"</p>
 
-  </div>  <footer>
-    &copy; 2025 X-PLAY Rental PS Karawang. All rights reserved.
-  </footer>
+    <div class="buttons">
+      <a href="https://bit.ly/WhatsappXPLAY" target="_blank">Chat via WhatsApp</a>
+      <a href="https://www.instagram.com/rental.ps.karawang_x_play?igsh=MWJnc256NW44aHI5MA==" target="_blank" class="instagram">Lihat Instagram</a>
+    </div>
+
+    <div class="promo">
+      <p>✅ Melayani sewa PS3, PS4, PS5 & TV 32"</p>
+      <p>✅ Siap antar jemput sampai tujuan</p>
+      <p>✅ Harga mulai dari Rp 35.000 – makin lama makin murah!</p>
+    </div>
+
+    <div class="price-list">
+      <img src="price-list.jpg" alt="Price List X-PLAY" />
+    </div>
+  </div>
 </body>
 </html>

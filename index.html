@@ -1,151 +1,80 @@
-<!DOCTYPE html>
-<html lang="id">
+<!DOCTYPE html><html lang="id">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Rental PS Karawang - X-PLAY</title>
-    <style>
-        /* Menambahkan background gambar stik PS */
-        body {
-            font-family: 'Arial', sans-serif;
-            margin: 0;
-            padding: 0;
-            background-image: url('https://via.placeholder.com/1920x1080.png?text=Background+Stik+PS'); /* Ganti dengan link gambar stik PS */
-            background-size: cover;
-            background-position: center;
-            color: white;
-        }
-
-        header {
-            background-color: rgba(26, 26, 26, 0.8); /* Semi-transparan agar teks lebih terlihat */
-            padding: 20px 0;
-            text-align: center;
-        }
-
-        header h1 {
-            font-size: 3rem;
-            color: #ffb400;
-            margin: 0;
-        }
-
-        header p {
-            font-size: 1.2rem;
-            margin-top: 10px;
-        }
-
-        .promo {
-            background-color: rgba(44, 44, 44, 0.9); /* Semi-transparan */
-            text-align: center;
-            padding: 20px;
-            font-size: 1.5rem;
-        }
-
-        .promo p {
-            margin: 0;
-            font-weight: bold;
-        }
-
-        .product-gallery {
-            display: flex;
-            justify-content: center;
-            gap: 20px;
-            margin-top: 20px;
-            padding: 20px;
-        }
-
-        .product-gallery img {
-            width: 200px;
-            border-radius: 10px;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.3);
-        }
-
-        .cta-buttons {
-            display: flex;
-            justify-content: center;
-            gap: 20px;
-            margin-top: 20px;
-        }
-
-        .cta-buttons a {
-            background-color: #25D366;
-            color: white;
-            padding: 15px 25px;
-            border-radius: 8px;
-            text-decoration: none;
-            font-weight: bold;
-            font-size: 1rem;
-            transition: background-color 0.3s;
-        }
-
-        .cta-buttons a:hover {
-            background-color: #128C7E;
-        }
-
-        .footer {
-            background-color: rgba(26, 26, 26, 0.8);
-            text-align: center;
-            padding: 20px 0;
-            margin-top: 40px;
-            font-size: 1rem;
-        }
-
-        .footer a {
-            color: #ffb400;
-            text-decoration: none;
-        }
-
-        .footer a:hover {
-            text-decoration: underline;
-        }
-
-        .promo span {
-            color: #ffb400;
-        }
-
-        @media screen and (max-width: 768px) {
-            .product-gallery {
-                flex-direction: column;
-                align-items: center;
-            }
-
-            .cta-buttons {
-                flex-direction: column;
-                align-items: center;
-            }
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rental PS Karawang - X-PLAY</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      color: white;
+      background: url('background.jpg') no-repeat center center fixed;
+      background-size: cover;
+      backdrop-filter: brightness(0.6);
+    }
+    .container {
+      text-align: center;
+      padding: 80px 20px;
+    }
+    h1 {
+      font-size: 3em;
+      margin-bottom: 10px;
+    }
+    h2 {
+      font-size: 1.5em;
+      color: #ccc;
+      margin-bottom: 30px;
+    }
+    p {
+      font-size: 1.2em;
+      margin-bottom: 20px;
+    }
+    .buttons {
+      margin-top: 30px;
+    }
+    .buttons a {
+      display: inline-block;
+      margin: 10px;
+      padding: 12px 25px;
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background 0.3s;
+    }
+    .whatsapp {
+      background: #25D366;
+      color: white;
+    }
+    .whatsapp:hover {
+      background: #1da851;
+    }
+    .instagram {
+      background: #E1306C;
+      color: white;
+    }
+    .instagram:hover {
+      background: #b62059;
+    }
+    footer {
+      margin-top: 80px;
+      font-size: 0.9em;
+      color: #aaa;
+    }
+  </style>
 </head>
 <body>
-
-<header>
-    <h1>Rental PS Karawang - X-PLAY</h1>
+  <div class="container">
+    <h1>X-PLAY</h1>
+    <h2>Rental PS Harian Area Karawang</h2>
     <p>Rental Praktis, Tanpa Harus Keluar Rumah</p>
-</header>
+    <p>Kami melayani rental harian untuk PS3, PS4, PS5, serta TV 32". Siap antar jemput unit ke lokasi Anda!</p>
+    <p>Harga mulai dari <strong>Rp35.000</strong> — makin lama makin murah!</p><div class="buttons">
+  <a href="https://bit.ly/WhatsappXPLAY" target="_blank" class="whatsapp">Chat WhatsApp</a>
+  <a href="https://www.instagram.com/rental.ps.karawang_x_play?igsh=MWJnc256NW44aHI5MA==" target="_blank" class="instagram">Kunjungi Instagram</a>
+</div>
 
-<section class="promo">
-    <p>Level up hiburanmu di rumah!</p>
-    <p>Rental harian mulai <span>Rp 35.000</span></p>
-    <p>Gratis antar jemput se-Karawang</p>
-    <p><strong>Makin lama makin murah!</strong></p>
-    <p>Booking sekarang, main sepuasnya!</p>
-</section>
-
-<section class="product-gallery">
-    <img src="https://via.placeholder.com/200x200?text=PS+3" alt="PS3">
-    <img src="https://via.placeholder.com/200x200?text=PS+4" alt="PS4">
-    <img src="https://via.placeholder.com/200x200?text=PS+5" alt="PS5">
-</section>
-
-<section class="cta-buttons">
-    <a href="https://bit.ly/WhatsappXPLAY">💬 Chat via WhatsApp</a>
-    <a href="https://www.instagram.com/rental.ps.karawang_x_play?igsh=MWJnc256NW44aHI5MA==">📸 Lihat IG Kami</a>
-</section>
-
-<section class="footer">
-    <p>Area Layanan: Karawang kota, Klari, Rengasdengklok, Cikampek, Telukjambe, dan sekitarnya.</p>
-    <p>© 2025 X-PLAY Rental PS Karawang. Semua foto & konten milik X-PLAY. <a href="https://www.instagram.com/rental.ps.karawang_x_play?igsh=MWJnc256NW44aHI5MA==" target="_blank">Instagram</a> | <a href="https://bit.ly/WhatsappXPLAY" target="_blank">WhatsApp</a></p>
-</section>
-
+  </div>  <footer>
+    &copy; 2025 X-PLAY Rental PS Karawang. All rights reserved.
+  </footer>
 </body>
 </html>

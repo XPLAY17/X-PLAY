@@ -61,6 +61,33 @@
       border-radius: 10px;
     }
 
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      margin-top: 40px;
+    }
+
+    .gallery-item {
+      background: rgba(255, 255, 255, 0.1);
+      padding: 10px;
+      border-radius: 10px;
+      width: 150px;
+      text-align: center;
+    }
+
+    .gallery-item img {
+      max-width: 100%;
+      border-radius: 8px;
+      height: auto;
+    }
+
+    .gallery-item p {
+      margin-top: 8px;
+      font-size: 14px;
+    }
+
   </style>
 </head>
 <body>
@@ -80,7 +107,30 @@
       <p>✅ Harga mulai dari Rp 35.000 – makin lama makin murah!</p>
     </div>
 
+    <!-- Galeri Produk -->
+    <div class="gallery">
+      <div class="gallery-item">
+        <img src="ps3.png" alt="PlayStation 3">
+        <p>PlayStation 3</p>
+      </div>
+      <div class="gallery-item">
+        <img src="ps4.png" alt="PlayStation 4">
+        <p>PlayStation 4</p>
+      </div>
+      <div class="gallery-item">
+        <img src="ps5.png" alt="PlayStation 5">
+        <p>PlayStation 5</p>
+      </div>
+      <div class="gallery-item">
+        <img src="tv32.png" alt="TV 32 Inch">
+        <p>TV 32"</p>
+      </div>
+      <div class="gallery-item">
+        <img src="tv43.png" alt="TV 43 Inch">
+        <p>TV 43"</p>
+      </div>
     </div>
+
   </div>
 </body>
 </html>
